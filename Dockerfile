@@ -29,7 +29,7 @@ COPY package*.json .
 # All installations
 RUN npm install || npm install || npm install
 COPY . .
-COPY --from=development /usr/app/prisma ./prisma
+# COPY --from=development /usr/app/prisma ./prisma
 
 RUN npm install
 
